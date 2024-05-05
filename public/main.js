@@ -17,21 +17,41 @@ window.addEventListener('scroll', function () {
     }
 });
 
+window.addEventListener('scroll', reveal);
 
-// let animate = document.querySelectorAll(section)
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
 
-// window.onscroll = () => {
-//     animate.forEach( sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop -150;
-//         let height = sec.offsetHeight;
+    for(var i=0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150 ;
 
-//         if(top >= top < offset + height) {
-//             sec.classList.add('show-animate');
-//         }
-//         else{
-//             sec.classList.remove('show-animate');
-//         }
-//     });
-// }
+        if (revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', jump_txty);
+
+function jump_txty(){
+    var reveals = document.querySelectorAll('.jump_txt');
+
+    for(var i=0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150 ;
+
+        if (revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('bhejo');
+        }else{
+            reveals[i].classList.remove('bhejo');
+        }
+    }
+}
+
+
 

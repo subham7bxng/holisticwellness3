@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
@@ -66,6 +67,10 @@
         margin-left: 10px;
     }
 
+    .point{
+        justify-content: left;
+    }
+
     .points-header {
         text-align: justify;
         font-family: "Roboto Serif", serif;
@@ -73,7 +78,7 @@
         font-weight: 500;
         font-style: normal;
         background-color: antiquewhite;
-        padding: 1%;
+        padding-left: 0;
     }
 
     .crausal1 {
@@ -85,8 +90,8 @@
     }
 
     .crausal-text {
-        font-family: cursive;
-        font-weight: 10;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
         color: #45474B;
         text-align: justify;
     }
@@ -149,7 +154,7 @@
         background-repeat: no-repeat;
         height: 230px;
         width: 100px;
-        opacity: calc(50%);
+        opacity: calc(30%);
     }
 
     .flower-index-bg-rv {
@@ -162,7 +167,7 @@
         background-repeat: no-repeat;
         height: 230px;
         width: 100px;
-        opacity: calc(50%);
+        opacity: calc(30%);
     }
 
     .yogi-man {
@@ -183,15 +188,15 @@
         position: absolute;
         z-index: -20;
         left: -50px;
-        top: 950px;
+        top: 1010px;
         background-image: url(Yoga-IMG/chakra-6-removebg-preview.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         transform: translate(-50%, -50%);
         animation: rotate 70s linear infinite;
-        opacity: calc(25%);
+        opacity: calc(30%);
     }
 
     .img-c3 {
@@ -206,19 +211,19 @@
         width: 300px;
         transform: translate(-50%, -50%);
         animation: rotate 70s linear infinite;
-        opacity: calc(40%);
+        opacity: calc(35%);
     }
 
     .img-b2 {
         position: absolute;
-        z-index: -10;
+        z-index: -1;
         right: -50px;
-        top: 1160px;
+        top: 1190px;
         background-image: url(Yoga-IMG/chakra-3-removebg-preview.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         transform: translate(-50%, -50%);
         animation: rotate 70s linear infinite;
         opacity: calc(30%);
@@ -226,17 +231,17 @@
 
     .img-a1 {
         position: absolute;
-        z-index: -1;
-        left: 0px;
-        top: 880px;
+        z-index: -10;
+        left: 50px;
+        top: 960px;
         background-image: url(Yoga-IMG/chakra-2-removebg-preview.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
-        width: 500px;
+        height: 350px;
+        width: 350px;
         transform: translate(-50%, -50%);
         animation: rotate-bk 70s linear infinite;
-        opacity: calc(15%);
+        opacity: calc(25%);
     }
 
     .image-container {
